@@ -1,0 +1,53 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "fraudulent"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "FalsePositives"
+          },
+          {
+            "className": "TruePositives"
+          },
+          {
+            "className": "FalseNegatives"
+          },
+          {
+            "className": "TrueNegatives"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.46.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "pipelines/cintha_bang-pipeline/Trainer/model/9/Format-Serving"
+  }
+}
